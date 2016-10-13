@@ -22,7 +22,23 @@ Typical tasks for machine learning are predicting what movies a person may enjoy
 
 There are three main branches of machine learning: **Supervised learning**, **Unsupervised learning**, and **Reinforcement learning**.
 
-#Perception
+#Perception Stack
+
+The idea behind the perception module is that conception, perception and reasoning form a vertical stack of processing.
+
+##The base layer: Conception
+
+Conception is the process of identifying relevant patterns in your sensory log, and saving them for future lookup. The reason this is useful is because it is much easier to identify a given pattern against sensory input than it is to continuously re-identify patterns from raw data. 
+
+Conception is a constant process - We are constantly scanning out input to see if we can find new patterns.
+
+##The intermediate layer: Perception
+
+Perception is the process of mapping our sensory log to known patterns, or concepts in our knowledge base. Perception is what allows us to interact with the complexity of the real world in a managable way.
+
+##The top layer: Logic, Reasoning and Abstract Thought
+
+Once we've identified a set of concepts that we can map directly to the real world, we can perform higher level associations with them. This is the realm of abstract thinking, where we can create and manipulate the models in our head to produce new models that we have never seens before, or maintain rules and logic that form relationships between concepts.
 
 ##Concepts and Patterns
 
