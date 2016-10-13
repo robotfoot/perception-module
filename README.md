@@ -4,6 +4,14 @@
 
 ##Introduction
 
+Robotics is a mature field, the term having been coined in the middle of the 20th century. Robots are now prevalent in factory settings worldwide, and in certain telemetrically-controlled service-related roles. However, robots have not progressed to the point where they are useful for most tedious or dangerous service-based tasks. Successful robots are typically limited to very specific applications in controlled environments, which restricts them to factory or highly controlled settings. 
+
+One of the reasons that robots have not progressed beyond this threshold is because they struggle with learning and successfully interacting with dynamic environments. In contrast to this, humans are adept at learning and adapting to new environments, and are able to communicate in abstract terms to perform useful tasks.
+
+
+
+###Relationship to Machine Learning
+
 Machine learning is a field of study concerned with learning from data. There are two main techniques for learning from data: classification and regression. Classification is the task of, given an input, to what output class should we associate it? Regression is more direct: Given a series of inputs, can we predict the next value?
 
 A classic example of machine learning is classifying a number in an image. The inputs for this tasks are small images of numbers, and the output classes are the digits `0-9`. Usually we are given a set of *training data*, which is a set of images that have been already associated with a number `0-9`. We typically derive one or more *features* from the input data, with which we will train on. Some features that are typically used for this example are average position of all black pixels, variance of all black pixels, etc. Then, we calculate these features for each training image, and *train* our learning algorithm using the features as inputs, and the known output class as well. Once trained, we can run our learning algorithm on our *test data*, and compare the performance to the correct answers.
