@@ -34,6 +34,6 @@ This will continuously scan the point clouds and attempt to segment them.
 
 Given segments, attempt to match to existing patterns.
 
-###Sematic system
+###Semantic system
 
 Given a pattern from the conception subsystem, the semantic system will attempt to describe it in words. This might use supervised learning?
