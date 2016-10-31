@@ -6,11 +6,16 @@ var otherPlayerMeshes;
 var otherPlayerBullets;
 
 function initSky(){
-  var skyGeo = new THREE.SphereGeometry(100, 25, 25);
+
+  var planeSize = 1000000;
+  var topPlaneGeometry = new THREE.PlaneGeometry(planeSize, planeSize);
   var skyMaterial = new THREE.MeshLambertMaterial({color: 0xBBBBEE});
   //var skyTexture = THREE.ImageUtils.loadTexture( "/images/sky.jpg" );
-  var sky = new Physijs.SphereMesh( skyGeo, skyMaterial, 0);
-  sky.material.side = THREE.BackSide;
+  //var sky = new Physijs.SphereMesh( skyGeo, skyMaterial, 0);
+  var sky = new Physijs.PlaneMesh( topPlaneGeometry, skyMaterial, 0);
+  //sky.material.side = THREE.BackSide;
+  sky.position.set(0, 100, 0);
+  sky.rotation.x = Math.PI/2;
   scene.add(sky);
 }
 
@@ -133,7 +138,7 @@ function start(){
   renderer.setSize( window.innerWidth - 200, window.innerHeight - 200);
   document.getElementById( 'viewport' ).appendChild( renderer.domElement );
 
-  //initSky(scene);
+  initSky(scene);
   var level = initLevel();
   //playerBox = dropPlayerBox();
   var lightSource = addLightSource();
